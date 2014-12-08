@@ -23,9 +23,9 @@ Others options:
 - `'imgActive' : "imgActive",` *This is the name of the main classe that contain the pictures of each galleries*
 - `'overlay' : "overlay",` *This plugin will create a class called "overlay", you can change de name*
 - * *You can change the actions pictures, i used fontAwesome.*
-			* `'imgNext' : "<i class="fa fa-angle-right"></i>",` *Change the duration of the smoothscroll*
-			* `'imgPrev' : "<i class="fa fa-angle-left"></i>",` *Change the duration of the smoothscroll*
-			* `'imgClose' : "<i class="fa fa-times"></i>",` *Change the duration of the smoothscroll*
+	* `'imgNext' : "<i class="fa fa-angle-right"></i>",` *Change the duration of the smoothscroll*
+	* `'imgPrev' : "<i class="fa fa-angle-left"></i>",` *Change the duration of the smoothscroll*
+	* `'imgClose' : "<i class="fa fa-times"></i>",` *Change the duration of the smoothscroll*
 - `'speed' : 300` *Finally, you can set the speed of animations.*
 
 
