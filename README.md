@@ -10,7 +10,7 @@ This plugin will allowed you to create a gallery.
 - It is under MIT licence.
 
 This will call the plugin:
-	$(document).jquerygallery();
+	`$(document).jquerygallery();`
 Demo:
 --------
 		View a [demo here](http://www.guillaumebreux.com/git-plugin/gallery "jQuery-Gallery")
