@@ -11,20 +11,21 @@ This plugin will allowed you to create a gallery.
 
 This will call the plugin:
 	`$(document).jquerygallery();`
+
 Demo:
 --------
-		View a [demo here](http://www.guillaumebreux.com/git-plugin/gallery "jQuery-Gallery")
+View a [demo here](http://www.guillaumebreux.com/git-plugin/gallery "jQuery-Gallery")
 Others options:
 --------
 - `'coverImgOverlay' : true,` *If you want thumbnails under your picture*
 - `'thumbnail' : "coverImgOverlay",` *This is the name of the class that contain thumbnails*
-- `'thumbnailHeight' : 120,'` *Set an height value to center the picture vertically*
+- `'thumbnailHeight' : 120,` *Set an height value to center the picture vertically*
 - `'imgActive' : "imgActive",` *This is the name of the main classe that contain the pictures of each galleries*
 - `'overlay' : "overlay",` *This plugin will create a class called "overlay", you can change de name*
-- *You can change the actions pictures, i personnaly used fontAwesome.*
-- - `'imgNext' : "<i class="fa fa-angle-right"></i>",` *Change the duration of the smoothscroll*
-- - `'imgPrev' : "<i class="fa fa-angle-left"></i>",` *Change the duration of the smoothscroll*
-- - `'imgClose' : "<i class="fa fa-times"></i>",` *Change the duration of the smoothscroll*
+- * *You can change the actions pictures, i used fontAwesome.*
+			* `'imgNext' : "<i class="fa fa-angle-right"></i>",` *Change the duration of the smoothscroll*
+			* `'imgPrev' : "<i class="fa fa-angle-left"></i>",` *Change the duration of the smoothscroll*
+			* `'imgClose' : "<i class="fa fa-times"></i>",` *Change the duration of the smoothscroll*
 - `'speed' : 300` *Finally, you can set the speed of animations.*
 
 
