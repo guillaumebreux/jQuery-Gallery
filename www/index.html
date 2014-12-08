@@ -1,0 +1,105 @@
+<!doctype html>
+<!--[if (IE 8)&!(IEMobile)]> <html lang="fr" class="ie8 old-ie no-js"> <![endif]-->
+<!--[if (gt IE 8)&!(IEMobile)]><!--> <html lang="fr" class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>jQuery gallery plugin</title>
+	<meta name="viewport" content="width=device-width" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link href='http://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<script>
+		document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/,'js');
+
+	</script>
+</head>
+
+<body>
+	<div id="wrapper">
+		<header>
+			<div class="version">v1.0</div>
+			<h1>jQuery Gallery plugin</h1>
+			<div class="dl"><a href="#">Télécharger</a></div>
+		</header>
+		<section>
+		<h2>De quoi s'agit il? </h2>
+		<p>Ce petit plugin vous permet d'aggrandir vos images au dessus de votre contenu à partir d'une seule image. Exemple: </p>
+<pre>
+<div class="coverimg">
+.<a href="">
+..<img src="src.jpg" alt="" data-gallery="first-gallery" />
+.</a>
+</div>
+</pre>
+		<div class="coverimg">
+				<a href="#"><img src="http://perlbal.hi-pi.com/blog-images/806972/gd/130747324206/Update-3-du-contenu-aleatoire-dans-DC-Universe-Online.jpg" data-gallery="first-gallery" alt=""/></a>
+				<a href="#"><img src="http://www.ajdr.org/wp-content/uploads/2012/01/flickr-3297910747-original-1024x747.jpg" data-gallery="first-gallery" alt="" /></a>
+				<a href="#"><img src="http://www.babelio.com/users/liste_La-culture-geek_5725.jpeg" data-gallery="first-gallery" alt="" /></a>
+				<a href="#"><img src="http://i275.photobucket.com/albums/jj316/jiriachi/cerebro_geek-1.jpg" data-gallery="first-gallery" alt="" /></a>
+				<a href="#"><img src="http://www.brefjeblogue.fr/wp-content/uploads/2014/08/calm_geek_geek_on.jpg" data-gallery="first-gallery" alt="" /></a>
+		</div>
+	<p>Comme vous pouvez le remarquer, l'image contient un attribut data-gallery qui permet de différencier les différentes galeries de votre page. Voici donc une autre galerie dans la même page mais avec un "data-gallery" différent:</p>
+<pre>
+<div class="coverimg">
+.<a href="">
+..<img src="src.jpg" alt="" data-gallery="second-gallery" />
+.</a>
+</div>
+</pre>
+	<div class="coverimg">
+			<a href="#"><img src="http://ressources.blogdumoderateur.com/2013/03/man-woman-geek-550x309.jpg" data-gallery="second-gallery" alt="" /></a>
+			<a href="#"><img src="http://redac.socialinput.fr/wp-content/uploads/2012/08/geek.jpg" data-gallery="second-gallery" alt="" /></a>
+			<a href="#"><img src="http://imagizer.imageshack.us/a/img267/7821/geek01.jpg" data-gallery="second-gallery" alt="" /></a>
+			<a href="#"><img src="http://www.journaldugeek.com/files/2009/10/what-geek-540x304.jpg" data-gallery="second-gallery" alt="" /></a>
+			<a href="#"><img src="http://www.photogeniques.fr/wp-content/uploads/2013/05/are-you-a-geek.jpg" data-gallery="second-gallery" alt="" /></a>
+	</div>
+	<p>Tout ce dont vous avez besoin c'est de jQuery et du script avec son initialisation à la fin de votre document.</p>
+<pre>
+$(document).jquerygallery({
+// Si vous voulez les miniatures en dessous.
+'coverImgOverlay' : true,
+// La classe contenant les images pour la stylisation.
+'imgActive' : "imgActive",
+// La classe contenant les miniatures.
+'thumbnail' : "coverImgOverlay",
+// La hauteur que vous attribuer à ces minatures
+'thumbnailHeight' : 120,
+// Le nom de la classe qui sert à assombrir toute la page.
+'overlay' : "overlay",
+// Les icones d'actions. Ceux-ci viennent de fontAwesome.
+'imgNext' : "<i class='fa fa-angle-right'></i>",
+'imgPrev' : "<i class='fa fa-angle-left'></i>",
+'imgClose' : "<i class='fa fa-times'></i>",
+// La vitesse des animations.
+'speed' : 300
+});
+</pre>
+<h2>Architecture du document</h2>
+<p>Dans le fichier téléchargé, vous pourrez retrouver plusieurs dossiers avec un fichier.txt explicatif. Cette démo est réalisée avec SASS, le fichier style.css est donc compressé. Tous les styles concernant le plugin en lui même se trouve dans le fichier 5-js.scss. Il est également compilé à la racine du document jquery-gallery.css</p>
+
+
+	</section>
+		<footer><a href="http://opensource.org/licenses/MIT" target="_blank">MIT licence</a></footer>
+	</div>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="js/jquery-gallery.js"></script>
+
+	<script src="js/script.js"></script>
+	<script type="text/javascript">
+				$(document).jquerygallery();
+$('pre').each(function(){
+		var string = $(this).html(),
+						bigThan = new RegExp('<', 'gi'),
+						smaThan = new RegExp('>', 'gi');
+		string = string.replace(bigThan,"&lt;");
+		$(this).html(string);
+		string = $(this).html();
+		string = string.replace(smaThan,"&gt;");
+		$(this).html(string);
+});
+	</script>
+</body>
+</html>

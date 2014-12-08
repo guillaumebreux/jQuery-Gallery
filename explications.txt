@@ -1,0 +1,37 @@
+/*************************************************************
+*------------------------------------------------------------*
+*----------------                            ----------------*
+*--------------   CONVENTIONS / EXPLICATIONS   --------------*
+*----------------                            ----------------*
+*------------------------------------------------------------*
+**************************************************************/
+
+CONVENTION DE NOMMAGE:
+- Nom en anglais;
+- Nom au singulier;
+- "-" plutôt que "_";
+- Noms pertinents;
+- Utiliser les classes et identifiants comme nom d'images: body.jpg plutôt que fond.jpg;
+- Noms courts;
+- Différencier le premier élément d'une liste plutôt que le dernier.
+
+ARBORESCENCE
+- sources : 
+----- Documents utiles à l'intégration. 
+----- Ex: Code à reprendre, maquettes à intégrer, textes à publier
+----- Création de sous-dossiers possible.
+
+- spec :
+----- Spécifications fonctionnelles
+----- Ex: Cahier des charge, le zoning, l'arborescence, demandes d'évolution
+
+- www :
+----- Fichiers d'intégration, racine du site contenant tous les livrables
+
+-- img :
+----- Contient les images de contenu (html)
+-- theme:
+----- Contient les images du template (css)
+-- tmp:
+----- Fichiers de contenus temporaires pour le remplissage
+----- Ex: avatar, images de slide ou video utilisé dans la maquette du graphiste mais qui ne seront pas reprise par le client.
