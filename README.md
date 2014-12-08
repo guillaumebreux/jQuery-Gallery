@@ -13,7 +13,7 @@ This will call the plugin:
 	$(document).jquerygallery();
 Demo:
 --------
-		View a [demo here](http://www.guillaumebreux.com/git-plugin/gallery)
+		View a [demo here](http://www.guillaumebreux.com/git-plugin/gallery "jQuery-Gallery")
 Others options:
 --------
 - `'coverImgOverlay' : true,` *If you want thumbnails under your picture*
